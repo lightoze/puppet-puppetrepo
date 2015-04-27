@@ -1,0 +1,8 @@
+#!/bin/bash
+
+FILE=/etc/yum/pluginconf.d/versionlock.list
+
+cat <(repoquery --show-duplicates --envra "puppet-<%= puppet_version %>") <(repoquery --show-duplicates --envra "facter-<%= facter_version %>") |
+while read line; do
+    grep -q -F "$line" "$FILE" || echo "$line" >> "$FILE"
+done

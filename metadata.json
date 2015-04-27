@@ -1,0 +1,17 @@
+{
+  "name": "lightoze-puppetrepo",
+  "version": "0.1.0",
+  "author": "lightoze",
+  "summary": "Setup Puppet package repository and version restrictions",
+  "license": "Apache 2.0",
+  "source": "https://github.com/lightoze/puppet-puppetrepo",
+  "project_page": "https://github.com/lightoze/puppet-puppetrepo",
+  "issues_url": "https://github.com/lightoze/puppet-puppetrepo/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_range": ">= 1.0.0"
+    }
+  ]
+}
+
