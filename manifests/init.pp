@@ -6,7 +6,7 @@ class puppetrepo($puppet_version = '3.6.*', $facter_version = '2.1.*') {
                 location => 'http://apt.puppetlabs.com',
                 release => "${::lsbdistcodename}",
                 repos => 'main dependencies',
-                key => '4BD6EC30',
+                key => '47B320EB4C7C375AA9DAE1A01054B7A24BD6EC30',
                 key_server => 'pgp.mit.edu',
             }
             apt::hold { ['puppet', 'puppet-common']:
