@@ -34,8 +34,8 @@ class puppetrepo($puppet_version = '3.6.*', $facter_version = '2.1.*') {
             cron { 'yum-lock':
                 command => $script,
                 ensure => present,
-                hour => '0',
-                minute => '0',
+                hour => '3',
+                minute => '45',
             }
         }
     }
