@@ -1,4 +1,4 @@
-class puppetrepo($puppet_version = '3.6.*', $facter_version = '2.1.*') {
+class puppetrepo($puppet_version = '3.7.*', $facter_version = '2.4.*') {
     case $::osfamily {
         default: { fail("Unsupported platform ${::osfamily}") }
         'Debian': {
