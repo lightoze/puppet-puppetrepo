@@ -3,6 +3,7 @@ class puppetrepo($puppet_agent_version = '1.2.*') {
     default: { fail("Unsupported platform ${::osfamily}") }
     'Debian': {
       apt::pin { 'puppet-agent':
+        packages => 'puppet-agent',
         version  => $puppet_agent_version,
         priority => 1001,
       }

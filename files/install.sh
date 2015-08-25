@@ -17,7 +17,5 @@ else
     exit 1
 fi
 
-puppet agent --enable
-echo "Type Puppet server name, followed by [ENTER]:"
-read server
-puppet agent --test --waitforcert 60 --server ${server}
+echo "Run command:"
+echo "/opt/puppetlabs/puppet/bin/puppet agent --test --environment=production --waitforcert 30 --noop --server ..."
