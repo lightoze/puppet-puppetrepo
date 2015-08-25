@@ -18,4 +18,4 @@ else
 fi
 
 echo "Run command:"
-echo "/opt/puppetlabs/puppet/bin/puppet agent --test --environment=production --waitforcert 30 --noop --server ..."
+echo "/opt/puppetlabs/bin/puppet agent --test --environment=production --waitforcert 30 --noop --server ..."
