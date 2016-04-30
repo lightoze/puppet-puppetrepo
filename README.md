@@ -14,7 +14,7 @@ It works on Debian and RedHat `$osfamily`.
 ## Usage
 
 Just include `puppetrepo` class. It has a single parameter `puppet_agent_version`,
-which is a pattern for required `puppet-agent` package version (e.g. `1.4.*`).
+which is a pattern for required `puppet-agent` package version (e.g. default `1.4.*`).
 
 ## Reference
 
