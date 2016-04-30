@@ -26,8 +26,8 @@ class puppetrepo($puppet_agent_version = '1.4.*') {
         refreshonly => true,
       }
       cron { 'puppet-yum-lock':
-        command => $script,
         ensure  => present,
+        command => $script,
         hour    => '3',
         minute  => '45',
       }
