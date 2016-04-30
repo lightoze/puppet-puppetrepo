@@ -2,7 +2,7 @@
 
 ## Overview
 
-This module manages Puppet agent repository and package version locking.
+This module manages Puppet package repository and agent version locking.
 It works on Debian and RedHat `$osfamily`.
 
 ### What puppetrepo affects

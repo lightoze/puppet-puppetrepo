@@ -2,15 +2,47 @@
   "name": "lightoze-puppetrepo",
   "version": "0.1.0",
   "author": "lightoze",
-  "summary": "Setup Puppet package repository and version restrictions",
+  "summary": "Setup Puppet package repository and agent version locking",
   "license": "Apache 2.0",
   "source": "https://github.com/lightoze/puppet-puppetrepo",
   "project_page": "https://github.com/lightoze/puppet-puppetrepo",
   "issues_url": "https://github.com/lightoze/puppet-puppetrepo/issues",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "12.04",
+        "14.04",
+        "16.04"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "7", "8"
+      ]
+    }
+  ],
   "dependencies": [
     {
       "name": "puppetlabs-stdlib",
-      "version_range": ">= 1.0.0"
+      "version_range": ">= 4.0.0"
+    },
+    {
+      "name": "puppetlabs-apt",
+      "version_range": ">= 2.1.1"
     }
   ]
 }
