@@ -4,7 +4,7 @@ set -euf -o pipefail
 . /etc/os-release
 
 if [[ $ID == centos || $ID == rhel ]]; then
-    rpm -ivh https://yum.puppetlabs.com/puppetlabs-release-pc1-el-${VERSION_ID}.noarch.rpm
+    rpm -ivh https://yum.puppetlabs.com/puppetlabs-release-pc1-el-${VERSION_ID:0:1}.noarch.rpm
     yum install -y "puppet-agent-<%= @puppet_agent_version %>"
 elif [[ $ID == debian || $ID == ubuntu ]]; then
     wget -O /tmp/puppet-release.deb https://apt.puppetlabs.com/puppetlabs-release-pc1-$(lsb_release -cs).deb
